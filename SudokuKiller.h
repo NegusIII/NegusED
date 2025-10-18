@@ -19,7 +19,7 @@ using namespace std
  *@details las coordenadas están representadas por dos enteros, fila y columna, que deben ser siempre <= 0. Además,
  *cada casilla del sudoku tiene asignado un valor entre el 1 y el 9.
  *
- *@pre fjla, columna >= 0
+ *@pre fila, columna >= 0
  */
 class coord {
 
@@ -51,7 +51,7 @@ public:
     /**
      * @return columna
      */
-    int get_columna(int _columna) const;
+    int get_columna() const;
 
 };
 
@@ -82,7 +82,7 @@ public:
      *
      * @post se construye el objeto de la clase jaula con los datos proporcionados.
      */
-    jaula(int _valor int _longitud, bool _horizontal);
+    jaula(coord _inicio, int _valor int _longitud, bool _horizontal);
 
     /**
      * @brief constructor sin parámetros de la clase jaula, que inicializa un objeto con longitud 0 (valor tambien se
