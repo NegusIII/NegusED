@@ -1,43 +1,43 @@
 \begin{theindex}
 
   \item {columna\_correcta}
-    \subitem {sudoku\_killer}, \hyperpage{6}
+    \subitem {sudoku\_killer}, \hyperpage{8}
   \item {cuadricula\_correcta}
-    \subitem {sudoku\_killer}, \hyperpage{7}
+    \subitem {sudoku\_killer}, \hyperpage{9}
 
   \indexspace
 
   \item {get\_horizontal}
-    \subitem {jaula}, \hyperpage{4}
+    \subitem {jaula}, \hyperpage{6}
   \item {get\_inicio}
-    \subitem {jaula}, \hyperpage{4}
+    \subitem {jaula}, \hyperpage{6}
   \item {get\_longitud}
-    \subitem {jaula}, \hyperpage{4}
+    \subitem {jaula}, \hyperpage{6}
   \item {get\_valor}
-    \subitem {jaula}, \hyperpage{5}
-    \subitem {sudoku\_killer}, \hyperpage{7}
+    \subitem {jaula}, \hyperpage{7}
+    \subitem {sudoku\_killer}, \hyperpage{9}
 
   \indexspace
 
-  \item {jaula}, \hyperpage{3}
-    \subitem {get\_horizontal}, \hyperpage{4}
-    \subitem {get\_inicio}, \hyperpage{4}
-    \subitem {get\_longitud}, \hyperpage{4}
-    \subitem {get\_valor}, \hyperpage{5}
-    \subitem {jaula}, \hyperpage{3}
+  \item {jaula}, \hyperpage{5}
+    \subitem {get\_horizontal}, \hyperpage{6}
+    \subitem {get\_inicio}, \hyperpage{6}
+    \subitem {get\_longitud}, \hyperpage{6}
+    \subitem {get\_valor}, \hyperpage{7}
+    \subitem {jaula}, \hyperpage{5}
   \item {jaula\_correcta}
-    \subitem {sudoku\_killer}, \hyperpage{8}
+    \subitem {sudoku\_killer}, \hyperpage{10}
 
   \indexspace
 
   \item {sudoku\_correcto}
+    \subitem {sudoku\_killer}, \hyperpage{10}
+  \item {sudoku\_killer}, \hyperpage{7}
+    \subitem {columna\_correcta}, \hyperpage{8}
+    \subitem {cuadricula\_correcta}, \hyperpage{9}
+    \subitem {get\_valor}, \hyperpage{9}
+    \subitem {jaula\_correcta}, \hyperpage{10}
+    \subitem {sudoku\_correcto}, \hyperpage{10}
     \subitem {sudoku\_killer}, \hyperpage{8}
-  \item {sudoku\_killer}, \hyperpage{5}
-    \subitem {columna\_correcta}, \hyperpage{6}
-    \subitem {cuadricula\_correcta}, \hyperpage{7}
-    \subitem {get\_valor}, \hyperpage{7}
-    \subitem {jaula\_correcta}, \hyperpage{8}
-    \subitem {sudoku\_correcto}, \hyperpage{8}
-    \subitem {sudoku\_killer}, \hyperpage{6}
 
 \end{theindex}
