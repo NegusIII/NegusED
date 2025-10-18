@@ -1,0 +1,109 @@
+\hypertarget{classjaula}{}\doxysection{Referencia de la Clase jaula}
+\label{classjaula}\index{jaula@{jaula}}
+
+
+clase que representa una jaula del sudoku killer.  
+
+
+
+
+{\ttfamily \#include $<$Sudoku\+Killer.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjaula_ad8ae2a8c205883062082fea3228c4101}{jaula}} (coord \+\_\+inicio, int \+\_\+valor, int \+\_\+longitud, bool \+\_\+horizontal)
+\begin{DoxyCompactList}\small\item\em Constructor para la clase jaula a partir de su valor, su longitud y su dirección. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classjaula_a592a810a3f88b70c590950f9ffbc7a92}\label{classjaula_a592a810a3f88b70c590950f9ffbc7a92}} 
+\mbox{\hyperlink{classjaula_a592a810a3f88b70c590950f9ffbc7a92}{jaula}} ()
+\begin{DoxyCompactList}\small\item\em constructor sin parámetros de la clase jaula, que inicializa un objeto con longitud 0 (valor tambien se inicializa a 0). \end{DoxyCompactList}\item 
+coord \mbox{\hyperlink{classjaula_a6cf90d22cb89ab9f6704e4e27e997999}{get\+\_\+inicio}} () const
+\item 
+int \mbox{\hyperlink{classjaula_a9ca00eb4966dd98bc3c1129d1760a330}{get\+\_\+longitud}} () const
+\item 
+int \mbox{\hyperlink{classjaula_a8c49219b838b65be5edf74b6bc0d8fa5}{get\+\_\+valor}} () const
+\item 
+bool \mbox{\hyperlink{classjaula_ad6bbb9c9693beb7a03a43f248c9f9d74}{get\+\_\+horizontal}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+clase que representa una jaula del sudoku killer. 
+
+una jaula está representada con una posición de inicio, una dirección (horizontal, expandiendose hacia la derecha, o vertical, si no es horizontal y se desplaza hacia abajo), y su longitud. Además, cada jaula tiene un valor, que es correcto si es el resultado de la suma de los valores de todos sus elementos.
+
+\begin{DoxyPrecond}{Precondición}
+longitud $>$= 0 
+
+valor $>$ 0 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classjaula_ad8ae2a8c205883062082fea3228c4101}\label{classjaula_ad8ae2a8c205883062082fea3228c4101}} 
+\index{jaula@{jaula}!jaula@{jaula}}
+\index{jaula@{jaula}!jaula@{jaula}}
+\doxysubsubsection{\texorpdfstring{jaula()}{jaula()}}
+{\footnotesize\ttfamily jaula\+::jaula (\begin{DoxyParamCaption}\item[{coord}]{\+\_\+inicio,  }\item[{int}]{\+\_\+valor,  }\item[{int}]{\+\_\+longitud,  }\item[{bool}]{\+\_\+horizontal }\end{DoxyParamCaption})}
+
+
+
+Constructor para la clase jaula a partir de su valor, su longitud y su dirección. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em \+\_\+valor,el} & valor de la jaula \\
+\hline
+{\em \+\_\+longitud} & La longitud del array de coordenadas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+\+\_\+longitud $>$= 0.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se construye el objeto de la clase jaula con los datos proporcionados. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classjaula_ad6bbb9c9693beb7a03a43f248c9f9d74}\label{classjaula_ad6bbb9c9693beb7a03a43f248c9f9d74}} 
+\index{jaula@{jaula}!get\_horizontal@{get\_horizontal}}
+\index{get\_horizontal@{get\_horizontal}!jaula@{jaula}}
+\doxysubsubsection{\texorpdfstring{get\_horizontal()}{get\_horizontal()}}
+{\footnotesize\ttfamily bool jaula\+::get\+\_\+horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Devuelve}
+horizontal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classjaula_a6cf90d22cb89ab9f6704e4e27e997999}\label{classjaula_a6cf90d22cb89ab9f6704e4e27e997999}} 
+\index{jaula@{jaula}!get\_inicio@{get\_inicio}}
+\index{get\_inicio@{get\_inicio}!jaula@{jaula}}
+\doxysubsubsection{\texorpdfstring{get\_inicio()}{get\_inicio()}}
+{\footnotesize\ttfamily coord jaula\+::get\+\_\+inicio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Devuelve}
+inicio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classjaula_a9ca00eb4966dd98bc3c1129d1760a330}\label{classjaula_a9ca00eb4966dd98bc3c1129d1760a330}} 
+\index{jaula@{jaula}!get\_longitud@{get\_longitud}}
+\index{get\_longitud@{get\_longitud}!jaula@{jaula}}
+\doxysubsubsection{\texorpdfstring{get\_longitud()}{get\_longitud()}}
+{\footnotesize\ttfamily int jaula\+::get\+\_\+longitud (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Devuelve}
+longitud 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classjaula_a8c49219b838b65be5edf74b6bc0d8fa5}\label{classjaula_a8c49219b838b65be5edf74b6bc0d8fa5}} 
+\index{jaula@{jaula}!get\_valor@{get\_valor}}
+\index{get\_valor@{get\_valor}!jaula@{jaula}}
+\doxysubsubsection{\texorpdfstring{get\_valor()}{get\_valor()}}
+{\footnotesize\ttfamily int jaula\+::get\+\_\+valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Devuelve}
+valor 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+Sudoku\+Killer.\+h\end{DoxyCompactItemize}

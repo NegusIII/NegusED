@@ -1,0 +1,43 @@
+\begin{theindex}
+
+  \item {columna\_correcta}
+    \subitem {sudoku\_killer}, \hyperpage{6}
+  \item {cuadricula\_correcta}
+    \subitem {sudoku\_killer}, \hyperpage{7}
+
+  \indexspace
+
+  \item {get\_horizontal}
+    \subitem {jaula}, \hyperpage{4}
+  \item {get\_inicio}
+    \subitem {jaula}, \hyperpage{4}
+  \item {get\_longitud}
+    \subitem {jaula}, \hyperpage{4}
+  \item {get\_valor}
+    \subitem {jaula}, \hyperpage{5}
+    \subitem {sudoku\_killer}, \hyperpage{7}
+
+  \indexspace
+
+  \item {jaula}, \hyperpage{3}
+    \subitem {get\_horizontal}, \hyperpage{4}
+    \subitem {get\_inicio}, \hyperpage{4}
+    \subitem {get\_longitud}, \hyperpage{4}
+    \subitem {get\_valor}, \hyperpage{5}
+    \subitem {jaula}, \hyperpage{3}
+  \item {jaula\_correcta}
+    \subitem {sudoku\_killer}, \hyperpage{8}
+
+  \indexspace
+
+  \item {sudoku\_correcto}
+    \subitem {sudoku\_killer}, \hyperpage{8}
+  \item {sudoku\_killer}, \hyperpage{5}
+    \subitem {columna\_correcta}, \hyperpage{6}
+    \subitem {cuadricula\_correcta}, \hyperpage{7}
+    \subitem {get\_valor}, \hyperpage{7}
+    \subitem {jaula\_correcta}, \hyperpage{8}
+    \subitem {sudoku\_correcto}, \hyperpage{8}
+    \subitem {sudoku\_killer}, \hyperpage{6}
+
+\end{theindex}

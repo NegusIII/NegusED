@@ -1,0 +1,168 @@
+\hypertarget{classsudoku__killer}{}\doxysection{Referencia de la Clase sudoku\+\_\+killer}
+\label{classsudoku__killer}\index{sudoku\_killer@{sudoku\_killer}}
+
+
+clase que representa un sudoku killer.  
+
+
+
+
+{\ttfamily \#include $<$Sudoku\+Killer.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsudoku__killer_a0508b950127b6a12c2a63e87687e06b6}{sudoku\+\_\+killer}} ()
+\begin{DoxyCompactList}\small\item\em constructor sin parámetros \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsudoku__killer_a2d4fc80ac278228b28e86d0740366fa6}{sudoku\+\_\+killer}} (const int $\ast$valores, const \mbox{\hyperlink{classjaula}{jaula}} $\ast$\+\_\+jaulas, int \+\_\+num\+\_\+jaulas)
+\begin{DoxyCompactList}\small\item\em constructor del sudoku killer con un array de valores y uno de jaulas \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsudoku__killer_adef45b704ce6657b4d8a56254ea87bab}{get\+\_\+valor}} (int fila, int columna)
+\begin{DoxyCompactList}\small\item\em devuelve el valor de una casilla del sudoku killer \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsudoku__killer_a680c74cc6b343d9bac8ed6223307bdaf}{cuadricula\+\_\+correcta}} (coord subcuadricula)
+\begin{DoxyCompactList}\small\item\em Comprueba si la subcuadrícula dada es correcta. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsudoku__killer_acd2585823cb6f81556868a22c3ed3f86}{columna\+\_\+correcta}} (int columna)
+\begin{DoxyCompactList}\small\item\em Comprueba si la columna dada es correcta. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsudoku__killer_a28904fffff55d0d01719c8bd96f92de4}{jaula\+\_\+correcta}} (const \mbox{\hyperlink{classjaula}{jaula}} \&\+\_\+jaula)
+\begin{DoxyCompactList}\small\item\em comprueba que una jaula del sudoku killer sea correcta \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsudoku__killer_a0344afa7a6f3e867c0685d1a08117c33}{sudoku\+\_\+correcto}} ()
+\begin{DoxyCompactList}\small\item\em comprueba si el \mbox{\hyperlink{classsudoku__killer}{sudoku\+\_\+killer}} está resuelto correctamente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+clase que representa un sudoku killer. 
+
+cada sudoku killer es una cuadrícula de 9 $\ast$ 9 que tiene a su vez 9 subcuadrículas 3 $\ast$ 3. cada celda del sudoku killer está contenida en una jaula, cada una con un valor especificado que es el resultado de la suma de los valores de todas sus celdas.
+
+\begin{DoxyPrecond}{Precondición}
+todas las casillas tienen que estar incluídas en una jaula y solo una. 
+
+1 $<$= valores $<$= 9. 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classsudoku__killer_a0508b950127b6a12c2a63e87687e06b6}\label{classsudoku__killer_a0508b950127b6a12c2a63e87687e06b6}} 
+\index{sudoku\_killer@{sudoku\_killer}!sudoku\_killer@{sudoku\_killer}}
+\index{sudoku\_killer@{sudoku\_killer}!sudoku\_killer@{sudoku\_killer}}
+\doxysubsubsection{\texorpdfstring{sudoku\_killer()}{sudoku\_killer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sudoku\+\_\+killer\+::sudoku\+\_\+killer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor sin parámetros 
+
+inicializa el objeto con todas las casillas con valor 0, y sin jaulas. \mbox{\Hypertarget{classsudoku__killer_a2d4fc80ac278228b28e86d0740366fa6}\label{classsudoku__killer_a2d4fc80ac278228b28e86d0740366fa6}} 
+\index{sudoku\_killer@{sudoku\_killer}!sudoku\_killer@{sudoku\_killer}}
+\index{sudoku\_killer@{sudoku\_killer}!sudoku\_killer@{sudoku\_killer}}
+\doxysubsubsection{\texorpdfstring{sudoku\_killer()}{sudoku\_killer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sudoku\+\_\+killer\+::sudoku\+\_\+killer (\begin{DoxyParamCaption}\item[{const int $\ast$}]{valores,  }\item[{const \mbox{\hyperlink{classjaula}{jaula}} $\ast$}]{\+\_\+jaulas,  }\item[{int}]{\+\_\+num\+\_\+jaulas }\end{DoxyParamCaption})}
+
+
+
+constructor del sudoku killer con un array de valores y uno de jaulas 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em valores} & array con los valores del \mbox{\hyperlink{classsudoku__killer}{sudoku\+\_\+killer}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classsudoku__killer_acd2585823cb6f81556868a22c3ed3f86}\label{classsudoku__killer_acd2585823cb6f81556868a22c3ed3f86}} 
+\index{sudoku\_killer@{sudoku\_killer}!columna\_correcta@{columna\_correcta}}
+\index{columna\_correcta@{columna\_correcta}!sudoku\_killer@{sudoku\_killer}}
+\doxysubsubsection{\texorpdfstring{columna\_correcta()}{columna\_correcta()}}
+{\footnotesize\ttfamily bool sudoku\+\_\+killer\+::columna\+\_\+correcta (\begin{DoxyParamCaption}\item[{int}]{columna }\end{DoxyParamCaption})}
+
+
+
+Comprueba si la columna dada es correcta. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em columna} & representa el índice de la columna que se quiere comprobar\\
+\hline
+\end{DoxyParams}
+Una columna es correcta si está llena y cada uno de los número se encuentra una única vez.
+
+\begin{DoxyReturn}{Devuelve}
+true si la scolumna es correcta 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+0 $<$= columna $<$= 9 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classsudoku__killer_a680c74cc6b343d9bac8ed6223307bdaf}\label{classsudoku__killer_a680c74cc6b343d9bac8ed6223307bdaf}} 
+\index{sudoku\_killer@{sudoku\_killer}!cuadricula\_correcta@{cuadricula\_correcta}}
+\index{cuadricula\_correcta@{cuadricula\_correcta}!sudoku\_killer@{sudoku\_killer}}
+\doxysubsubsection{\texorpdfstring{cuadricula\_correcta()}{cuadricula\_correcta()}}
+{\footnotesize\ttfamily bool sudoku\+\_\+killer\+::cuadricula\+\_\+correcta (\begin{DoxyParamCaption}\item[{coord}]{subcuadricula }\end{DoxyParamCaption})}
+
+
+
+Comprueba si la subcuadrícula dada es correcta. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em subcuadricula} & representa una de las subcuadrículas de la cuadrícula del sudoku. Cada subcuadrícula se representa con una coordenada como si fuera una celda de un sudoku 3 $\ast$ 3.\\
+\hline
+\end{DoxyParams}
+Una subcuadrícula es correcta si está llena y cada uno de los número se encuentra una única vez.
+
+\begin{DoxyReturn}{Devuelve}
+true si la subcuadrícula es correcta 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+0 $<$= subcuadricula.\+fila, subcuadricula.\+columna $<$= 3 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classsudoku__killer_adef45b704ce6657b4d8a56254ea87bab}\label{classsudoku__killer_adef45b704ce6657b4d8a56254ea87bab}} 
+\index{sudoku\_killer@{sudoku\_killer}!get\_valor@{get\_valor}}
+\index{get\_valor@{get\_valor}!sudoku\_killer@{sudoku\_killer}}
+\doxysubsubsection{\texorpdfstring{get\_valor()}{get\_valor()}}
+{\footnotesize\ttfamily int sudoku\+\_\+killer\+::get\+\_\+valor (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})}
+
+
+
+devuelve el valor de una casilla del sudoku killer 
+
+\begin{DoxyPrecond}{Precondición}
+0 $<$= fila $<$= 9 
+
+0 $<$= columna $<$= 9
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+valores \mbox{[}fila\mbox{]}\mbox{[}columna\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsudoku__killer_a28904fffff55d0d01719c8bd96f92de4}\label{classsudoku__killer_a28904fffff55d0d01719c8bd96f92de4}} 
+\index{sudoku\_killer@{sudoku\_killer}!jaula\_correcta@{jaula\_correcta}}
+\index{jaula\_correcta@{jaula\_correcta}!sudoku\_killer@{sudoku\_killer}}
+\doxysubsubsection{\texorpdfstring{jaula\_correcta()}{jaula\_correcta()}}
+{\footnotesize\ttfamily bool sudoku\+\_\+killer\+::jaula\+\_\+correcta (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classjaula}{jaula}} \&}]{\+\_\+jaula }\end{DoxyParamCaption})}
+
+
+
+comprueba que una jaula del sudoku killer sea correcta 
+
+una jaula es correcta si las componentes suman su valor. Por ejemplo, una jaula con valor 10, que tenga como inicio la casilla (0,0) y de longitud horizontal 2, es correcta únicamente si valores\mbox{[}0\mbox{]}\mbox{[}0\mbox{]} + valores\mbox{[}0\mbox{]}\mbox{[}1\mbox{]} = 10 \begin{DoxyReturn}{Devuelve}
+true si la jaula es correcta 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsudoku__killer_a0344afa7a6f3e867c0685d1a08117c33}\label{classsudoku__killer_a0344afa7a6f3e867c0685d1a08117c33}} 
+\index{sudoku\_killer@{sudoku\_killer}!sudoku\_correcto@{sudoku\_correcto}}
+\index{sudoku\_correcto@{sudoku\_correcto}!sudoku\_killer@{sudoku\_killer}}
+\doxysubsubsection{\texorpdfstring{sudoku\_correcto()}{sudoku\_correcto()}}
+{\footnotesize\ttfamily bool sudoku\+\_\+killer\+::sudoku\+\_\+correcto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+comprueba si el \mbox{\hyperlink{classsudoku__killer}{sudoku\+\_\+killer}} está resuelto correctamente. 
+
+El \mbox{\hyperlink{classsudoku__killer}{sudoku\+\_\+killer}} es correcto únicamente si todas sus columnas son correctas, todas sus subcuadrículas son correctas, y además si todas sus jaulas son tambien correctas.
+
+\begin{DoxyReturn}{Devuelve}
+true si el sudoku es correcto. 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+Sudoku\+Killer.\+h\end{DoxyCompactItemize}

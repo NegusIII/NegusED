@@ -4,15 +4,6 @@
 using namespace std
 
 /**
- *
- *@author Sergio Salvador Gil
- *@brief TDA Sudoku killer
- *
- *@details Especificación del Tipo de Dato Abstracto Sudoku Killer.
- *
- */
-
-/**
  *@class coord
  *@brief clase que representa la coordenada de una casilla del sudoku killer
  *
@@ -31,8 +22,8 @@ public:
     /**
      * @brief constructor de la clase coord dada la fila, columna y el valor que se le asigna.
      *
-     * @pre _fila <= 0
-     * @pre _columna <= 0
+     * @pre _fila >= 0
+     * @pre _columna >= 0
      * @pre 1 <= valor <= 9
      *
      *@post se construye el objeto de la clase coord con los datos proporcionados
@@ -76,13 +67,13 @@ private:
 public:
     /**
      * @brief Constructor para la clase jaula a partir de su valor, su longitud y su dirección.
-     * @param valor, el valor de la jaula
+     * @param _valor, el valor de la jaula
      * @param _longitud La longitud del array de coordenadas.
      * @pre _longitud >= 0.
      *
      * @post se construye el objeto de la clase jaula con los datos proporcionados.
      */
-    jaula(coord _inicio, int _valor int _longitud, bool _horizontal);
+    jaula(coord _inicio, int _valor, int _longitud, bool _horizontal);
 
     /**
      * @brief constructor sin parámetros de la clase jaula, que inicializa un objeto con longitud 0 (valor tambien se
