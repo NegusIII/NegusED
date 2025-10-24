@@ -14,9 +14,10 @@
  * @brief struct para almacenar el valor y el máximo hasta ese momento
  */
 struct elemento {
+private:
     int valor;
     int max;
-
+public:
     int getvalor() const;
     int getmax() const;
     void setmax(int max);
