@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// ./cmake-build-debug/pila_max 1 2 . 3 4 . . .
+
 int main(int argc, char *argv[]){
 
     // Run the current exercise
