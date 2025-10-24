@@ -1,61 +1,74 @@
+#ifndef MAXSTACK_H
+#define MAXSTACK_H
+
 /**
  * @file maxstack.h
  * @brief  Archivo de especificación del TDA MaxStack
  * @author
  */
 
+#include <iostream>
 #include <queue>
 
+/**
+ * @brief struct para almacenar el valor y el máximo hasta ese momento
+ */
 struct elemento {
     int valor;
     int max;
+
+    int getvalor() const;
+    int getmax() const;
+    void setmax(int max);
 };
 
+
+std::ostream & operator<<(std::ostream & os, const elemento & elem);
+
 /**
- * @brief clase maxtack, que representa una pila con máximo
- *
- * @details la clase está implementada con una cola principal, que actúa como pila, y una cola auxiliar, que  sirve
- * para asegurar el comportamiento de la clase como pila. Las colas guardan objetos de tipo elemento, que guardan
- * el valor de la posición actual de la pila junto con el valor del máximo actual.
- *
+ * @brief TDA MaxStack
+ *        Implementación de una pila con máximo
  */
 class maxstack {
 private:
-
     std::queue<elemento> pila;
     std::queue<elemento> aux;
 
 public:
+    /**
+     * @brief Constructor por defecto
+     */
+    maxstack();
 
     /**
      * @brief metodo que saca el tope de la pila
-     *
-     * @return el elemento en la parte superior de la pila
      */
-    elemento pop();
+    void pop();
 
     /**
      * @brief coloca el elemento parámetro en lo alto de la pila
+     * @param i valor a insertar
      */
-    void push(elemento);
+    void push(int i);
 
     /**
-     *
-     * @brief metodo que muestra el tope de la pila sin extraerlo
+     * @brief devuelve el elemento en el tope de la pila
      *
      * @return referencia al tope de la pila
      */
-    elemento &top();
+    elemento top();
 
     /**
      * @brief metodo que devuelve el tamaño de la pila
+     * @return el tamaño de la pila
      */
     int size();
 
     /**
-     * @brief metodo para comprobar si una pila está vacía
-     *
-     * @return true si la pila está vacía
+     * @brief comprueba si la pila está vacía
+     * @return true si la pila está vacía, false en caso contrario
      */
     bool empty();
 };
+
+#endif //MAXSTACK_H
