@@ -1,6 +1,3 @@
-//
-// Created by ed on 16/11/25.
-//
 
 #ifndef RETO2_PILADOBLE_H
 #define RETO2_PILADOBLE_H
@@ -17,7 +14,10 @@ template <typename T>
  * fijo. Cada pila comienza desde un extremo del vector y crecen hacia dentro siempre y cuando el vector no esté
  * completo.
  *
- * @
+ * @param v el vector en el que están implementadas las pilas
+ * @param tam el tamaño del vector
+ * @param top1 el índice del tope de la pila 1
+ * @param top0 el índice del tope de la pila 0
  */
 class PilaDoble {
 
